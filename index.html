@@ -5,22 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Button Example</title>
     <style>
-        .button-container {
-            position: relative;
-        }
-
         .unreachable {
-            position: absolute;
-            top: -100px;
-            left: -100px;
+            pointer-events: none;
+            opacity: 0.5;
         }
     </style>
 </head>
 <body>
     <p>Mark гей?</p>
-    <div class="button-container">
-        <button type="да">da</button>
-        <button type="нет" class="unreachable">net</button>
-    </div>
+    <button type="нет" class="unreachable">net</button>
+    <button type="да">da</button>
 </body>
 </html>
